@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-html',
@@ -8,5 +9,11 @@ import { Component } from '@angular/core';
   styleUrl: './html.component.css'
 })
 export class HtmlComponent {
+  pdfUrl:any;
 
+ constructor(private sanitizer: DomSanitizer){}
+
+ngOnInit() {
+  this.pdfUrl = this.sanitizer.bypassSecurityTrustResourceUrl('/cheatsheet/assets/html.pdf');
+}
 }
