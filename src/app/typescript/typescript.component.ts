@@ -19,7 +19,7 @@ export class TypescriptComponent implements OnInit, OnDestroy{
   }
   ngOnInit(): void {
     this.sub = this.route.params.subscribe(params => {
-      this.id =  "/assets/ts/"+params['id']+".png"; 
+      this.id =  "/cheatsheet/assets/ts/"+params['id']+".png"; 
     });
    
   }
