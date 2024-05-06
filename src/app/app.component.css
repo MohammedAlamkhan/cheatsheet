@@ -1,0 +1,13 @@
+.app-container {
+    height: 100vh;
+    /* sets the height of the container to 100% of the viewport height */
+}
+
+mat-sidenav {
+    width: 200px;
+}
+
+mat-sidenav-container {
+    height: 100%;
+    /* sets the height of the sidenav container to 100% of the parent container */
+}
