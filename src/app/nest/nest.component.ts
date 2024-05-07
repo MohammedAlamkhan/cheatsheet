@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './nest.component.css'
 })
 export class NestComponent {
-
+  id =  "/cheatsheet/assets/"+"nest"+".png"; 
 }
